@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="">
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <link rel="stylesheet" type="text/css" href="navbar.css">
+ <title>PizzaHut Pforzheim - Example</title>
+
+</head>
+<body>
+  <header class="header">
+   <img src="./logo.png" >
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="#" style=" color: rgba(80, 182, 187, 1)">HOME</a></li>
+      <li><a href="#work">SERVICES</a></li>
+      <li><a href="#about">ÜBER UNS</a></li>
+      <li><a href="#contact">KONTAKT</a></li>
+    </ul>
+  </header>
+
+
+    <div class="container dots">
+      <div class="card">
+    <h1>Deine <span id="underlineColor" >Lieblingspizza</span>, nur bei uns!</h1>  
+    <button>Online Bestellen</button>
+  </div>
+        <img src="./pizza.png" alt="pizza" id="pizza">
+        <img style="position: absolute; height: 200px; z-index: -1; " src="./image-blank-first-frame-min-170a3896d9.webp" alt="">
+
+
+    </div>
+
+    <svg 
+    class="confetti on-left con-slice-circle"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="32"
+    height="32"
+  >
+    <defs>
+      <path 
+        id="abbb mysvg"
+        d="M31.412 14.02c.099.904.12 1.814.064 2.72L16.74 31.476c-.906.056-1.816.035-2.72-.065zM30.26 9.602c.287.676.525 1.369.713 2.072L11.674 30.973a15.693 15.693 0 0 1-2.072-.713zm.637 10.501a15.681 15.681 0 0 1-4.003 6.79 15.68 15.68 0 0 1-6.79 4.004zM28.2 6.093c.415.533.791 1.086 1.128 1.657L7.75 29.327A15.68 15.68 0 0 1 6.093 28.2zm-1.305-1.479l-22.28 22.28c-6.153-6.153-6.152-16.128 0-22.28 6.152-6.152 16.127-6.153 22.28 0z"
+      ></path>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+      <mask id="bbbb" fill="#fff"><use xlink:href="#abbb"></use></mask>
+      <use fill="#5095FF" xlink:href="#abbb"></use>
+      <g fill="#8887FC" mask="url(#bbbb)">
+        <path
+          transform="translate(-2.462 -.123)"
+          d="M0 0H37.538V33.231H0z"
+        ></path>
+      </g>
+    </g>
+  </svg>
+
+  <div class="cards">
+    <div id="card1"></div>
+    <div id="card2"></div>
+    <div id="card3"></div>
+  </div>
+
+</body>
+</html>
